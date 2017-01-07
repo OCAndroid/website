@@ -9,40 +9,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <style>
-  .fill-view {
-    min-height: 90vh;
-  }
-  .oc {
-    color: orange;
-  }
-
-  .dim {
-    filter: brightness(75%);
-  }
-
-  .fade {
-    filter: brightness(75%);
-  }
-  .larger-line-height {
-    line-height: 1.5em;
-  }
-
-  .justify {
-    text-align: justify;
-  }
-  </style>
   <script>
-  var isProduction = window.location.indexOf('localhost') !== -1;
-  if (isProduction) {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    var isProduction = window.location.pathname.indexOf('localhost') !== -1;
+    if (isProduction) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-65290525-2', 'auto');
-    ga('send', 'pageview');
-  }
+      ga('create', 'UA-65290525-2', 'auto');
+      ga('send', 'pageview');
+    }
   </script>
 </head>
 <body>
@@ -126,6 +103,7 @@
               <a
                 class="waves-effect waves-teal btn-flat"
                 href="https://www.meetup.com/OC-Android-Developers/events/235552034/"
+                id="event-link-cta1"
                 target="_blank"
                 >
                 Join us at an Event
@@ -142,7 +120,7 @@
               We are looking to simplify Android Development by spreading knowledge.
             </p>
             <p>
-              <a class="waves-effect waves-teal btn-flat" href="#">Speak at an Event</a>
+              <a class="waves-effect waves-teal btn-flat" href="mailto:speak@ocandroid.org">Speak at an Event</a>
             </p>
           </div>
         </div>
@@ -155,7 +133,7 @@
               We are looking to connect Developers to Opportunities in Orange County.
             </p>
             <p>
-              <a class="waves-effect waves-teal btn-flat" href="#">Share an Opportunity</a>
+              <a class="waves-effect waves-teal btn-flat" href="mailto:share@ocandroid.org">Share an Opportunity</a>
             </p>
           </div>
         </div>
@@ -172,14 +150,15 @@
           <div class="icon-block">
             <h5 class="header col s12 light">
               Join us at our Next Event on...<br> <br>
-              <b>Tuesday, December 13th</b><br>
-              OC User Group Holiday Gathering<br>
-              at PeopleSpace<br>
+              <b><span id="event-date">Tuesday, December 13th</span></b><br>
+              <span id="event-title">OC User Group Holiday Gathering</span><br>
+              at <span id="event-location">PeopleSpace</span><br>
             </h5>
             <p>
               <a
                 class="waves-effect waves-teal light-green btn"
                 href="https://www.meetup.com/OC-Android-Developers/events/235552034/"
+                id="event-link"
                 target="_blank">
                 RSVP Now
               </a>
@@ -298,11 +277,34 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
+    function onMeetupDataReady(response) {
+      var linkPrefix = 'https://www.meetup.com/OC-Android-Developers/events/'
+      var events = response.data;
+      var next = events[0];
+
+      $('#event-date').text(moment(next.time).format('LLLL'));
+      $('#event-title').text(next.name);
+      $('#event-location').text(next.venue.name);
+      $('#event-link').attr('href', next.link);
+      $('#event-link-cta1').attr('href', next.link);
+    }
+
+    function fetchLatestMeetup() {
+      $.ajax({
+        url: "https://api.meetup.com/OC-Android-Developers/events?photo-host=public&page=20&sig_id=33822022&status=upcoming&sig=7497283916ba595078637b37f843e01493fe46a5&callback=onMeetupDataReady",
+        method: 'GET',
+        crossDomain: true,
+        dataType: 'jsonp'
+      })
+    }
+
     $(document).ready(function(){
       $('.scrollspy').scrollSpy();
+      fetchLatestMeetup()
     });
   </script>
   </body>

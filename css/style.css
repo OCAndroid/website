@@ -55,3 +55,26 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.fill-view {
+  min-height: 90vh;
+}
+
+.oc {
+  color: orange;
+}
+
+.dim {
+  filter: brightness(75%);
+}
+
+.fade {
+  filter: brightness(75%);
+}
+.larger-line-height {
+  line-height: 1.5em;
+}
+
+.justify {
+  text-align: justify;
+}
