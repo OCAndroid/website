@@ -2,345 +2,178 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Orange County Android Developer Meetup</title>
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>
+    Orange County Android Developer Meetup
+  </title>
+  <link 
+    href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" 
+    rel="stylesheet"/>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link 
+    href="css/styles.css" 
+    type="text/css" 
+    rel="stylesheet" 
+    media="screen,projection"/>
+
   <script>
-    var isProduction = window.location.pathname.indexOf('localhost') !== -1;
-    if (isProduction) {
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    // var isProduction = window.location.pathname.indexOf('localhost') !== -1;
+    // if (isProduction) {
+    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    //   ga('create', 'UA-65290525-2', 'auto');
+    //   ga('send', 'pageview');
+    // }
 
-      ga('create', 'UA-65290525-2', 'auto');
-      ga('send', 'pageview');
-    }
+    // setInterval(() => !document.hasFocus() && window.location.reload(), 2000);
   </script>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><span class="oc">OC</span>Android</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#events">Events</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#about">About Us</a></li>
-      </ul>
+  <div class="">
+    <nav class="bg-black text-white px-3 py-3">
+      <span class="text-xl font-bold"><span class="text-orange-400">OCAndroid</span></span>
+    </nav>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#events">Events</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#about">About Us</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container fill-view">
-        <h1 class="header center white-text text-lighten-2">
-          OC Android Developers
-        </h1>
-        <div class="row center">
-          <img src="android.png" width="175px" class="center" style="-webkit-filter: white; -webkit-filter: brightness(100%);">
-        </div>
-        <div class="row center">
-          <h5 class="header col s12 light">
-            Community of Android Developers of Orange County
-          </h5>
-        </div>
-        <div class="row center">
-          <a
-            href="#events"
-            id="download-button"
-            class="btn-large waves-effect waves-light light-green lighten-1">
-            Join Us At Our Next Event
-          </a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax">
-      <img src="bg1.jpg" alt="Main background image for OCAndroid Developers Group" class="dim">
-    </div>
-  </div>
-
-
-  <div class="container scrollspy" id="about">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>About Us</h4>
-          <p class="left-align light"></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 center">
-          <p class="light flow-text larger-line-height">
-            We are developers, designers, and entrepreneurs with diverse background and degrees of experience.<br>
-            Our group's mission is to grow and evolve by sharing experiences and building relationships.
-          </p>
-        </div>
-      </div>
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block center">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Community</h5>
-            <p class="light">
-              We are looking to build an active community of Android Developers.
-            </p>
-            <p>
-              <a
-                class="waves-effect waves-teal btn-flat"
-                href="https://www.meetup.com/OC-Android-Developers/events/235552034/"
-                id="event-link-cta1"
-                target="_blank"
-                >
-                Join us at an Event
-              </a>
-            </p>
+    <main class="container mx-auto">
+      <!-- Start Event Header -->
+      <div class="my-20">
+        <div class="event-information">
+          <div class="event-information-attribute">
+            <div class="event-information-label">Join us at our next event:</div>
+            <h1 class="event-title">An Exploration of MotionLayout</h1>
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block center">
-            <h2 class="center brown-text"><i class="material-icons">class</i></h2>
-            <h5 class="center">Learning</h5>
-            <p class="light">
-              We are looking to simplify Android Development by spreading knowledge.
-            </p>
-            <p>
-              <a class="waves-effect waves-teal btn-flat" href="mailto:speak@ocandroid.org">Speak at an Event</a>
-            </p>
+
+        <div class="event-information">
+          <div class="event-information-attribute">
+            <div class="event-information-label text-center">Presented By</div>
+            <div class="event-information-value uppercase text-blue-700">Kenneth Baldauf</div>
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block center">
-            <h2 class="center brown-text"><i class="large material-icons">trending_up</i></h2>
-            <h5 class="center">Opportunity</h5>
-            <p class="light">
-              We are looking to connect Developers to Opportunities in Orange County.
-            </p>
-            <p>
-              <a class="waves-effect waves-teal btn-flat" href="mailto:share@ocandroid.org">Share an Opportunity</a>
-            </p>
+        <div class="event-information">
+          <div class="event-information-attribute">
+            <div class="event-information-label">Date</div>
+            <div class="event-information-value uppercase">April 22, 2020</div>
+          </div>
+
+          <div class="event-information-attribute">
+            <div class="event-information-label">Time</div>
+            <div class="event-information-value uppercase">6:30 PM</div>
+          </div>
+
+          <div class="event-information-attribute">
+            <div class="event-information-label">Location</div>
+            <div class="event-information-value uppercase">PeopleSpace, Irvine</div>
+          </div>
+        </div>
+
+        <div class="event-information my-2">
+          <div class="event-information-attribute">
+            <a href="#meet-up" class="bg-blue-700 rounded text-white px-3 py-2 text-lg">RSVP via Meetup</a>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
+      <!-- Start Future Events, Articles, and Resources Section -->
+      <div class="flex my-20">
+        <div class="flex-grow">
+          <h2 class="uppercase text-xl">Coming Events:<h2>
+          <ul class="bg-gray-200 px-4 py-4">
+            <li class="font-bold text-blue-700">Year in Android Recap <span class="text-gray-500">May 2020</span></li>
+            <li class="font-bold text-blue-700">Flutter Plugins <span class="text-gray-500">June 2020</span></li>
+            <li class="font-bold text-blue-700">Summer Community Bash <span class="text-gray-500">July 2020</span></li>
+            <li class="font-bold text-blue-700 text-right">See More Events...</li>
+          </ul>
+        </div>
+        <div class="flex-grow ml-4">
+          <h2 class="uppercase text-xl">Learning Resources:<h2>
+          <ul class="bg-gray-200 px-4 py-4">
+            <li class="font-bold text-blue-700">
+              <a href="https://developer.android.com/guide" target="_blank">Developer Guide <span class="text-gray-500">android.com</span></a>
+            </li>
+            <li class="font-bold text-blue-700">
+              <a href="https://developer.android.com/courses" target="_blank">Android Training (free) <span class="text-gray-500">android.com</span></a>
+            </li>
+            <li class="font-bold text-blue-700">
+              <a href="https://android-developers.googleblog.com/" target="_blank">Android Developers Blog <span class="text-gray-500">google.com</span></a>
+            </li>
+            <li class="font-bold text-blue-700">
+              <a href="https://developer.android.com/studio/" target="_blank">Android Studio <span class="text-gray-500">android.com</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
 
-  <div class="parallax-container valign-wrapper scrollspy" id="events">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <div class="icon-block">
-            <h5 class="header col s12 light">
-              Join us at our Next Event on...<br> <br>
-              <b><span id="event-date">Tuesday, December 13th</span></b><br>
-              <span id="event-title">OC User Group Holiday Gathering</span><br>
-              at <span id="event-location">PeopleSpace</span><br>
-              <br>
-              <br>
-              Sponsored By:
-            </h5>
-            <p>
-              <a href="http://www.originate.com/?utm_source=ocandroid.org&utm_campaign=meetup-sponsor&utm_medium=sponsor-link">
-                <img src="https://s3-us-west-1.amazonaws.com/ocandroid.org/images/originate_logo.svg" width="175">
-              </a>
-            </p>
-            <p>
-              <a
-                class="waves-effect waves-teal light-green btn"
-                href="https://www.meetup.com/OC-Android-Developers/events/235552034/"
-                id="event-link"
-                target="_blank">
-                RSVP Now
-              </a>
-            </p>
+      <!-- Start What is Section-->
+      <div class="flex my-20">
+        <div class="flex-grow">
+          <h2 class="uppercase text-xl">What is OC Android?<h2>
+          <div class="bg-green-300 text-2xl text-center px-8 py-8">
+            We are a community of makers, developers, designers, and entrepreneurs involved with Android.
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="parallax light-blue darken-1">
-      <img src="map-oc.png" alt="Unsplashed background img 2" class="fade">
-    </div>
-  </div>
 
-  <div class="container scrollspy" id="sponsors">
-    <div class="section">
+          <div class="flex mt-6">
+            <div class="flex-grow text-center">
+              <img class="mx-auto" width="200px" src="images/peoplespace.png">
+              <div class="text-blue-700 font-black uppercase condensed text-xl">Kenneth Baldauf</div>
+              <div class="text-gray-700 uppercase -mt-1">OCAndroid Organizer</div>
+            </div>
 
-      <div class="row">
-        <div class="col s12 center">
-          <h4>Sponsors</h4>
-          <p class="left-align light"></p>
-        </div>
-      </div>
+            <div class="flex-grow text-center">
+              <img class="mx-auto "width="200px" src="images/peoplespace.png">
+              <div class="text-blue-700 font-black uppercase condensed text-xl">Bladymir Tellez</div>
+              <div class="text-gray-700 uppercase -mt-1">OCAndroid Co-Organizer</div>
+            </div>
 
-      <div class="row">
-        <!-- Start Second Sponsor -->
-        <div class="col s12 m3">
-          <div class="icon-block">
-            <h2 class="center brown-text">
-              <a href="http://www.originate.com/?utm_source=ocandroid.org&utm_campaign=meetup-sponsor&utm_medium=sponsor-link">
-                <img src="https://s3-us-west-1.amazonaws.com/ocandroid.org/images/Originate-Logo.jpg" width="175">
-              </a>
-            </h2>
-          </div>
-        </div>
-        <div class="col s12 m9">
-          <h5>Originate</h5>
-          <p class="light">
-            Originate, a pioneer in venture product development, partners with forward-looking
-            enterprises and high-growth startups to design, build, and invest in ambitious
-            software products and companies.
-          </p>
-          <p>
-            Originate is an event sponsor
-          </p>
-          <p>
-            <a href="http://www.originate.com/?utm_source=ocandroid.org&utm_campaign=meetup-sponsor&utm_medium=sponsor-link">www.Originate.com</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- Start Third Sponsor -->
-        <div class="col s12 m3">
-          <div class="icon-block">
-            <h2 class="center brown-text">
-              <a href="http://peoplespace.us/?utm_source=ocandroid.org&utm_campaign=meetup-sponsor&utm_medium=sponsor-link">
-                <img src="peoplespace.png" width="175">
-              </a>
-            </h2>
-          </div>
-        </div>
-        <div class="col s12 m9">
-          <h5>PeopleSpace</h5>
-          <p class="light">
-            PeopleSpace is non-profit co-working community that provides support
-            to individuals, small-businesses, and start-ups through a variety of
-            education innitiatives, and community events.
-          </p>
-          <p>
-            PeopleSpace is currently the Venue Sponsor for our monthly meetups.
-          </p>
-          <p>
-            <a href="http://peoplespace.us/?utm_source=ocandroid.org&utm_campaign=meetup-sponsor&utm_medium=sponsor-link">www.PeopleSpace.us</a>
-          </p>
-        </div>
-      </div>
-
-      <!--<div class="row">
-        <div class="col s12 m12 center green-text">
-          <p>Sponsorship opportunities are available.</p>
-          <p>If you are interested in sponsoring, please email: <b><i>sponsor@ocandroid.org</i></b>.</p>
-        </div>
-      </div>-->
-
-    </div>
-  </div>
-
-  <footer class="page-footer light-green">
-    <!--<div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Stay In Touch</h5>
-          <p class="grey-text text-lighten-4">
-            We are a group of software developers excited about
-            technology and looking to help connect Android Developers
-            in Orange County and surrounding areas.
-          </p>
-
-        </div>
-      </div>
-
-       <div class="row">
-        <form class="col s6">
-          <div class="card white darken-1">
-            <div class="card-content">
-              <div class="card-title">
-                <h4 class="light">Get Notified</h4>
-                <p>Get updates on coming tech talks, hacknights, and local opportunities</p>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s11">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input placeholder="Full Name" id="first_name" type="text" class="validate">
-                  <label for="first_name">Full Name</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s11">
-                  <i class="material-icons prefix">email</i>
-                  <input id="email" placeholder="email@example.com" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="right-align input-field col s11">
-                  <input id="submit" type="submit" value="Sign Up" class="btn">
-                </div>
-              </div>
+            <div class="text-right">
+              <div style="font-size:8rem;" class="text-6xl text-blue-700 font-black condensed">+500</div>
+              <div class="text-blue-700 font-black uppercase condensed -mt-6">Members on Meetup.com</div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
-    </div>-->
 
-    <div class="footer-copyright">
-      <div class="container">
-        Made with <a class="white-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+
+      <!-- Start Sponsor Section-->
+      <div class="flex">
+        <div class="flex-grow">
+          <h2 class="uppercase text-xl">Meetup Sponsors<h2>
+          <div class="flex">
+            <div class="p-6">
+              <img src="images/peoplespace.png">
+            </div>
+            <div class="flex-grow ml-6">
+              <h3 class="font-bold text-lg mb-6">PeopleSpace</h3>
+              <p>
+                PeopleSpace is non-profit co-working community that provides support to individuals, small-businesses, and start-ups through a variety of education innitiatives, and community events.
+                <br/>
+                <br/>
+                <b>PeopleSpace is the Venue Sponsor for recurring monthly meetups.</b>
+                <br/>
+                <br/>
+                <a href="http://peoplespace.us?utm_source=ocandroid.org" target="_blank" class="text-blue-700 font-bold">www.PeopleSpace.us</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
 
+      <p class="bg-gray-200 text-2xl text-center px-8 py-8">
+        Interested in sponsoring an event? <br/> Contact us at contact@ocandroid.org
+      </p>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script>
-    function onMeetupDataReady(response) {
-      var linkPrefix = 'https://www.meetup.com/OC-Android-Developers/events/'
-      var events = response.data;
-      var next = events[0];
+    </main>
 
-      $('#event-date').text(moment(next.time).format('LLLL'));
-      $('#event-title').text(next.name);
-      $('#event-location').text(next.venue.name);
-      $('#event-link').attr('href', next.link);
-      $('#event-link-cta1').attr('href', next.link);
-    }
-
-    function fetchLatestMeetup() {
-      $.ajax({
-        url: "https://api.meetup.com/OC-Android-Developers/events?photo-host=public&page=20&sig_id=33822022&status=upcoming&sig=7497283916ba595078637b37f843e01493fe46a5&callback=onMeetupDataReady",
-        method: 'GET',
-        crossDomain: true,
-        dataType: 'jsonp'
-      })
-    }
-
-    $(document).ready(function(){
-      $('.scrollspy').scrollSpy();
-      fetchLatestMeetup()
-    });
-  </script>
-  </body>
+    <footer class="bg-black text-center text-gray-300 mt-20 px-3 py-6">
+      🤖
+    </footer>
+  </div>
+</body>
 </html>

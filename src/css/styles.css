@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply .text-gray-800;
+}
+
+.event-information {
+  @apply .font-bold .flex .justify-center;
+}
+
+.event-information .event-information-attribute {
+  @apply .mx-4 .my-1;
+}
+
+.event-information .event-information-label {
+  @apply .text-gray-500 .text-xs .uppercase;
+}
+
+.event-information .event-information-value {
+  @apply .text-base;
+  margin-top: -.25rem;
+}
+
+.event-title-label {
+  @apply .text-lg;
+}
+
+.event-title {
+  @apply .font-black .text-blue-700 .text-center .text-5xl .uppercase;
+  margin-top: -1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+

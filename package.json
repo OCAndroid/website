@@ -1,0 +1,24 @@
+{
+  "name": "oc-android-website",
+  "version": "2020.4.1",
+  "description": "Website for OC Android 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run css && ls src | grep -v css | xargs -I{} cp -R src/{} dist/",
+    "css": "npx tailwindcss build src/css/styles.css -o dist/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blad/ocandroid.org.git"
+  },
+  "author": "Bladymir Tellez <blad@ocandroid.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blad/ocandroid.org/issues"
+  },
+  "homepage": "https://github.com/blad/ocandroid.org#readme",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  }
+}
