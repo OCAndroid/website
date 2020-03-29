@@ -15,7 +15,7 @@ body {
 }
 
 .event-information .event-information-label {
-  @apply .text-gray-500 .text-xs .uppercase;
+  @apply .text-gray-500 .text-xs .uppercase .font-normal;
 }
 
 .event-information .event-information-value {
@@ -28,8 +28,53 @@ body {
 }
 
 .event-title {
-  @apply .font-black .text-blue-700 .text-center .text-5xl .uppercase;
-  margin-top: -1rem;
+  @apply .font-black 
+         .-my-4
+         .text-blue-700 
+         .text-center 
+         .text-6xl 
+         .uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.event-information .event-information-label.title-label {
+  @apply .text-lg;
+}
+
+.condensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.button {
+  @apply .bg-blue-700 .font-black .text-white .rounded .px-3 .py-2 .mt-2;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.fun-element {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.fun-element .android {
+  position: absolute;
+  filter: invert(100%);
+  opacity: 8%;
+  max-height: 100px;
+  visibility: hidden;
+}
+
+.fun-element::after {
+  position: absolute;
+  content: ' ';
+  background: radial-gradient(#fff, transparent);
+  opacity: 90%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

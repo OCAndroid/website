@@ -5,6 +5,7 @@
   <meta 
     name="viewport" 
     content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
   <title>
     Orange County Android Developer Meetup
   </title>
@@ -19,17 +20,15 @@
     media="screen,projection"/>
 
   <script>
-    // var isProduction = window.location.pathname.indexOf('localhost') !== -1;
-    // if (isProduction) {
-    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    //   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    //   ga('create', 'UA-65290525-2', 'auto');
-    //   ga('send', 'pageview');
-    // }
-
-    // setInterval(() => !document.hasFocus() && window.location.reload(), 2000);
+    var isProduction = window.location.pathname.indexOf('ocandroid') !== -1;
+    if (isProduction) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-65290525-2', 'auto');
+      ga('send', 'pageview');
+    }
   </script>
 </head>
 <body>
@@ -43,8 +42,12 @@
       <div class="my-20">
         <div class="event-information">
           <div class="event-information-attribute">
-            <div class="event-information-label">Join us at our next event:</div>
-            <h1 class="event-title">An Exploration of MotionLayout</h1>
+            <div class="event-information-label condensed title-label">Join us at our next event:</div>
+            <h1 class="event-title">
+              <a href="https://www.meetup.com/OC-Android-Developers/events/268806958/" target="_blank">
+                Shared Element Transitions
+              </a>
+            </h1>
           </div>
         </div>
 
@@ -52,43 +55,43 @@
         <div class="event-information">
           <div class="event-information-attribute">
             <div class="event-information-label text-center">Presented By</div>
-            <div class="event-information-value uppercase text-blue-700">Kenneth Baldauf</div>
+            <div class="event-information-value uppercase text-blue-700"><a href="https://www.meetup.com/OC-Android-Developers/members/155723912/" target="_blank">Kenneth Baldauf</a></div>
           </div>
         </div>
 
-        <div class="event-information">
+        <div class="event-information mt-4">
           <div class="event-information-attribute">
             <div class="event-information-label">Date</div>
-            <div class="event-information-value uppercase">April 22, 2020</div>
+            <div class="event-information-value">May 2020</div>
           </div>
 
           <div class="event-information-attribute">
             <div class="event-information-label">Time</div>
-            <div class="event-information-value uppercase">6:30 PM</div>
+            <div class="event-information-value">6:30 PM</div>
           </div>
 
           <div class="event-information-attribute">
             <div class="event-information-label">Location</div>
-            <div class="event-information-value uppercase">PeopleSpace, Irvine</div>
+            <div class="event-information-value">To Be Determined</div>
           </div>
         </div>
 
         <div class="event-information my-2">
           <div class="event-information-attribute">
-            <a href="#meet-up" class="bg-blue-700 rounded text-white px-3 py-2 text-lg">RSVP via Meetup</a>
+            <a href="https://www.meetup.com/OC-Android-Developers/events/268806958/" class="button text-lg">RSVP via Meetup</a>
           </div>
         </div>
       </div>
 
       <!-- Start Future Events, Articles, and Resources Section -->
-      <div class="flex my-20">
+      <div class="flex mt-20">
         <div class="flex-grow">
           <h2 class="uppercase text-xl">Coming Events:<h2>
           <ul class="bg-gray-200 px-4 py-4 leading-loose">
-            <li class="font-bold text-blue-700">Year in Android Recap <span class="text-gray-500">May 2020</span></li>
-            <li class="font-bold text-blue-700">Flutter Plugins <span class="text-gray-500">June 2020</span></li>
-            <li class="font-bold text-blue-700">Summer Community Bash <span class="text-gray-500">July 2020</span></li>
-            <li class="font-bold text-blue-700 text-right">See More Events...</li>
+            <li class="font-bold text-blue-700"><a href="https://www.meetup.com/OC-Android-Developers/events/268805889/" target="_blank">Year in Android Recap <span class="text-gray-500">May 2020</span></a></li>
+            <li class="font-bold text-blue-700"><a href="https://www.meetup.com/OC-Android-Developers/events/268806067/" target="_blank">Flutter: How to Build a Native Plugin <span class="text-gray-500">June 2020</span></a></li>
+            <li class="font-bold text-gray-700">Community Summer Bash <span class="text-gray-500">July 2020</span></li>
+            <li class="font-bold text-blue-700 text-right"><a href="https://www.meetup.com/OC-Android-Developers/events" target="_blank">See More Events...</a></li>
           </ul>
         </div>
         <div class="flex-grow ml-4">
@@ -109,6 +112,10 @@
           </ul>
         </div>
       </div>
+      <p class="bg-gray-200 text-gray-700 text-xl text-center px-8 py-8 mt-4 mb-20 condensed">
+        Events are a great way to showcase your project and skills!<br/>
+        Be a presenter email us at: contact@ocandroid.org
+      </p>
 
 
       <!-- Start What is Section-->
@@ -117,27 +124,32 @@
           <h2 class="uppercase text-xl">What is OC Android?<h2>
           <div class="bg-blue-100 text-2xl text-center px-8 py-8">
             We are a community of makers, developers, designers, and entrepreneurs<br/>
-            at the different intersections of Android.
+            at different intersections of Android.
           </div>
 
           <div class="flex mt-6">
-            <div class="flex-grow text-center">
-              <img class="mx-auto" width="175px" src="images/peoplespace.png">
-              <div class="text-blue-700 font-black uppercase condensed text-xl">Kenneth Baldauf</div>
+            <div class="flex-1 text-center">
+              <img class="mx-auto mb-2" width="175px" src="images/ken_circle.png">
+              <div class="text-blue-700 font-black uppercase condensed text-xl"><a href="https://www.meetup.com/OC-Android-Developers/members/155723912/" target="_blank">Kenneth Baldauf</a></div>
               <div class="text-gray-700 uppercase -mt-1">OC Android Organizer</div>
             </div>
 
-            <div class="flex-grow text-center">
-              <img class="mx-auto "width="175px" src="images/peoplespace.png">
-              <div class="text-blue-700 font-black uppercase condensed text-xl">Bladymir Tellez</div>
+            <div class="flex-1 text-center">
+              <img class="mx-auto mb-2" width="175px" src="images/blad_circle.png">
+              <div class="text-blue-700 font-black uppercase condensed text-xl"><a href="https://www.meetup.com/OC-Android-Developers/members/33822022/" target="_blank">Bladymir Tellez</a></div>
               <div class="text-gray-700 uppercase -mt-1">OC Android Co-Organizer</div>
             </div>
 
-            <div class="text-right">
+            <div class="flex-1 text-center">
               <div style="font-size:8rem;" class="text-6xl text-blue-700 font-black condensed">+500</div>
               <div class="text-blue-700 font-black uppercase condensed -mt-6">Members on Meetup.com</div>
             </div>
           </div>
+
+          <p class="bg-gray-100 text-2xl text-center px-8 py-8">
+            All individuals are welcome!<br/> 
+            <a href="https://www.meetup.com/OC-Android-Developers" target="_blank" class="button inline-block text-lg">Join Us on Meetup</a>
+          </p>
         </div>
       </div>
 
@@ -145,12 +157,12 @@
       <!-- Start Sponsor Section-->
       <div class="flex">
         <div class="flex-grow">
-          <h2 class="uppercase text-xl">Meetup Sponsors<h2>
+          <h2 class="uppercase text-xl mb-2">Meetup Sponsors<h2>
           <div class="flex">
             <div class="p-6">
               <img src="images/peoplespace.png">
             </div>
-            <div class="flex-grow ml-6">
+            <div class="flex-grow ml-6 pt-4">
               <h3 class="font-bold text-lg mb-6">PeopleSpace</h3>
               <p>
                 PeopleSpace is non-profit co-working community that provides support to individuals, small-businesses, and start-ups through a variety of education innitiatives, and community events.
@@ -166,7 +178,7 @@
         </div>
       </div>
 
-      <p class="bg-gray-200 text-2xl text-center px-8 py-8">
+      <p class="bg-gray-200 text-gray-700 text-2xl text-center px-8 py-8 condensed">
         Interested in sponsoring an event? <br/> Contact us at contact@ocandroid.org
       </p>
 
@@ -175,6 +187,81 @@
     <footer class="bg-black text-center text-gray-300 mt-20 px-3 py-6">
       🤖
     </footer>
+    <div class="fun-element"><img class="android" src="android.png"/></div>
   </div>
+  <script>
+    function seedInitialProperties(elements) {
+      elements.forEach(e => {
+        const verticalOffset = Math.floor(screen.height * Math.random());
+        const horizontalOffset = Math.floor(screen.width * Math.random());
+        e.style.top = verticalOffset + 'px';
+        e.style.left = horizontalOffset + 'px';
+
+        const scale = (50 + (50 * Math.random())) / 100;
+        const rotation = Math.floor(360 * Math.random()); 
+        e.style.transform = `rotate(${rotation}deg) scale(${scale})`;
+        e.style.visibility = 'visible';
+
+        e.velocity = {
+          scale: scale,
+          rotation: rotation,
+          scaleVelocity: .01 * Math.random(),
+          rotationVelocity: 2 * Math.random(),
+
+          y: Math.floor(8 * Math.random()) * (Math.random() > .5 ? -1 : 1),
+          x: Math.floor(8 * Math.random()) * (Math.random() > .5 ? -1 : 1)
+        }
+      })
+    }
+
+    function clampUpdate(lowerBound, upperBound, delta, currentValue) {
+      if (currentValue < lowerBound) {
+        return {delta: -delta, nextValue: lowerBound};
+      } else if (currentValue > upperBound) {
+        return {delta: -delta, nextValue: upperBound};
+      } else {
+        return {delta, nextValue: currentValue + delta};
+      }
+    }
+
+    function update(elements) {
+      if (document.hasFocus()) return;
+      elements.forEach(e => {
+        // Apply Translation Velocity
+        const yCurrent = parseInt(e.style.top.replace('px', ''))
+        const {delta: yVelocity, nextValue: yNext} = clampUpdate(-100, screen.height, e.velocity.y, yCurrent);
+        e.velocity.y = yVelocity;
+        e.style.top = yNext + 'px';
+
+
+        const xCurrent = parseInt(e.style.left.replace('px', ''))
+        const {delta: xVelocity, nextValue: xNext} = clampUpdate(-100, screen.width, e.velocity.x, xCurrent);
+        e.velocity.x = xVelocity;
+        e.style.left = xNext + 'px';
+
+        const scaleCurrent = e.velocity.scale;
+        const {delta: scaleVelocity, nextValue: scaleNext} = clampUpdate(0.25, .75, e.velocity.scaleVelocity, scaleCurrent);
+        e.velocity.scale = scaleNext;
+
+        const rotationNext = e.velocity.rotationVelocity + e.velocity.rotation;
+        e.velocity.rotation = rotationNext;
+        e.style.transform = `rotate(${rotationNext}deg) scale(${scaleNext})`;
+      });
+    }
+
+    window.onload = function() {
+      const itemCount = 200;
+      const target = document.querySelector('.android');
+      const elements = [target, ...new Array(itemCount - 1).fill(1).map(_ => target.cloneNode(true))];
+      const container = document.querySelector('.fun-element');
+      // Clean Up Container
+      for (i = 0; i < container.children.length; i++) container.children.item(i).remove();
+
+      // Append to Container
+      seedInitialProperties(elements)
+      elements.forEach(e => container.appendChild(e));
+      // setInterval(() => update(elements), 100);
+    };
+  </script>
 </body>
 </html>
