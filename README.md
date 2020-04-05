@@ -1,6 +1,16 @@
 # ocandroid.org
 <img src="http://forthebadge.com/images/badges/contains-technical-debt.svg" width="300px">
 
+## Development
+```
+cd dist && python -m SimpleHTTPServer
+npm run build
+
+# Use `watch` or a similar command to run a command to refresh 
+# during active development:
+# watch -n 1 npm run build 
+```
+
 ## Deployment
 
 1. Open AWS.
