@@ -13,8 +13,6 @@ npm run build
 
 ## Deployment
 
-1. Open AWS.
-2. Open the S3 bucket.
-3. Upload all files in this repository, feel free to exclude non-essential files.
+`npm run deploy`
 
 <img src="http://forthebadge.com/images/featured/featured-powered-by-electricity.svg" width="300px">
