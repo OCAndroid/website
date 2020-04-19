@@ -1,4 +1,4 @@
-This repository contains the source code for: [wwww.ocandroid.org](https://ocandroid.org)
+This repository contains the source code for: [www.ocandroid.org](https://ocandroid.org)
 
 
 ## Development
