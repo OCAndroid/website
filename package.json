@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run css && ls src | grep -v css | xargs -I{} cp -R src/{} dist/",
-    "deploy": "aws s3 sync dist/ s3://ocandroid.org/"
+    "deploy": "aws s3 sync dist/ s3://ocandroid.org/",
     "css": "npx postcss -c postcss.config.js -o dist/css/styles.css src/css/styles.css"
   },
   "repository": {
