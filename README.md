@@ -1,5 +1,5 @@
-# ocandroid.org
-<img src="http://forthebadge.com/images/badges/contains-technical-debt.svg" width="300px">
+This repository contains the source code for: [wwww.ocandroid.org](https://ocandroid.org)
+
 
 ## Development
 ```
@@ -16,3 +16,4 @@ npm run build
 `npm run deploy`
 
 <img src="http://forthebadge.com/images/featured/featured-powered-by-electricity.svg" width="300px">
+

@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blad/ocandroid.org.git"
+    "url": "git+https://github.com/OCAndroid/website.git"
   },
   "author": "Bladymir Tellez <blad@ocandroid.org>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/blad/ocandroid.org/issues"
+    "url": "https://github.com/OCAndroid/website/issues"
   },
-  "homepage": "https://github.com/blad/ocandroid.org#readme",
+  "homepage": "https://github.com/OCAndroid/website#readme",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "autoprefixer": "^9.7.5",
